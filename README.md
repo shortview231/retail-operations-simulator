@@ -15,10 +15,12 @@ Retail simulation is only useful if it can represent actual operational decision
 
 ## What Exists Today
 
-- An earlier SQL + Python POS simulator portfolio project
-- An active vending-first retail simulator project inside Lucid Vision
-- A documented Phase 1 schema registry for the vending simulator
-- Existing setup and run scripts for simulator database and run-loop support
+- A vending-first simulation engine modeled around manager runs, days, inventory, vendors, orders, machine state, and reporting surfaces
+- SQLite-backed operational state used to hold the simulation timeline rather than static mock views
+- Inventory depth, fill-gap visibility, and machine slot/loadout mechanics represented as first-class operating concerns
+- Vendor workspaces, catalog-driven ordering, and current-order tracking that connect purchasing decisions to downstream machine state
+- Reporting surfaces that summarize operational, personnel, and business views from the current simulation state
+- Existing setup and run scripts that support the simulator database and active run-loop workflow
 - A public-safe 8-shot proof pack covering launch flow, storeroom operations, ordering, loadout, and reports
 
 ## Compact System Flow
@@ -26,6 +28,39 @@ Retail simulation is only useful if it can represent actual operational decision
 `manager setup -> storeroom inventory -> vendor planning -> current order -> machine loadout -> reports`
 
 The current public baseline shows how the simulator moves from bootstrap and inventory state through vendor ordering and machine planning into operational reporting surfaces.
+
+## Architecture Depth
+
+### Simulation engine
+
+The simulator is structured around persisted run state rather than disconnected screens. It tracks current run context, simulation day progression, and the operational state needed to continue a scenario over time.
+
+### Inventory model
+
+The inventory layer treats storeroom state as more than a static count. It supports product-level depth, on-hand visibility, and the gap analysis needed to decide what should be reordered or loaded into route machines.
+
+### Vendor model
+
+Vendor workspaces and catalog views make suppliers part of the operational loop. The simulator treats vendor relationships, order drafting, and inbound inventory flow as explicit business mechanics rather than background assumptions.
+
+### Order pipeline
+
+The system supports a progression from catalog planning to draft order to current order tracking. That makes purchasing logic inspectable and ties order decisions directly to downstream inventory and machine outcomes.
+
+### Machine loadout engine
+
+Machine state is represented at the slot and depth level. The simulator uses that detail to support product-specific placement decisions, route loadout planning, and more realistic replenishment behavior.
+
+### Reporting engine
+
+The reporting layer summarizes the operational state of the simulation across business, personnel, and machine-facing views. This gives the project a stronger decision-support character than a simple POS or toy inventory demo.
+
+## Why This Simulator Is Unique
+
+- It is vending-first rather than a generic retail mockup, which gives the workflow a specific operational identity
+- It models the day-to-day mechanics of ordering, storeroom management, and machine replenishment instead of only end results
+- It behaves like a business decision engine, where inventory, vendors, orders, and reporting affect one another
+- It uses SQLite-backed state architecture so the simulation reads like a persistent system, not a one-screen prototype
 
 ## Proof Layer
 

@@ -8,6 +8,7 @@
 - There is a more ambitious vending-first simulator with documented schema and workflow structure
 - The current public repo includes a proof pack that demonstrates launch flow, inventory depth, vendor planning, order state, loadout, and reporting
 - The architecture is operational, not just visual: inventory, vendors, machines, and reporting are connected parts of one system story
+- SQLite-backed persisted state gives the simulator a stronger systems posture than a throwaway prototype
 
 ## What this public repo is showing
 
@@ -21,6 +22,13 @@ The goal of this repository is to make the simulator legible in public without d
 ## Why the baseline matters
 
 For a public repo, the value here is not fake completeness. The value is that the simulator already reads like a real operations system: it has multiple workflow surfaces, documented structure, and a visible proof layer that connects inventory, vendor ordering, machine planning, and reporting.
+
+## Why this simulator stands out
+
+- It is built around a vending-route operational model rather than a generic retail abstraction
+- It connects inventory, procurement, machine loadout, and reporting into one simulation story
+- It presents the simulator as a business decision engine, not just a front-end concept
+- It uses SQLite-backed state architecture to make runs and operational changes persistent and inspectable
 
 ## Current public boundary
 
