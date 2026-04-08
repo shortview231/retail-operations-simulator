@@ -1,0 +1,27 @@
+{
+  "order_id": "demo-order-2026-04-07-01",
+  "vendor": "Metro Snack Supply",
+  "status": "draft",
+  "line_items": [
+    {
+      "sku": "SODA-COLA-12OZ",
+      "display_name": "Cola 12oz",
+      "cases": 3,
+      "units_total": 72,
+      "estimated_cost": 58.32
+    },
+    {
+      "sku": "WATER-SPRING-16OZ",
+      "display_name": "Spring Water 16oz",
+      "cases": 2,
+      "units_total": 48,
+      "estimated_cost": 22.08
+    }
+  ],
+  "order_totals": {
+    "cases_total": 5,
+    "units_total": 120,
+    "estimated_cost_total": 80.4
+  },
+  "notes": "Public-safe example current-order snapshot for simulator documentation only."
+}

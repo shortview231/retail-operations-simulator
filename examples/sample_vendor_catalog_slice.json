@@ -1,0 +1,28 @@
+{
+  "vendor": "Metro Snack Supply",
+  "catalog_region": "St. Louis Route Group",
+  "products": [
+    {
+      "sku": "CHIPS-SEA-SALT",
+      "display_name": "Sea Salt Chips",
+      "unit_cost": 1.14,
+      "case_size": 24,
+      "lead_time_days": 3
+    },
+    {
+      "sku": "SODA-COLA-12OZ",
+      "display_name": "Cola 12oz",
+      "unit_cost": 0.81,
+      "case_size": 24,
+      "lead_time_days": 2
+    },
+    {
+      "sku": "WATER-SPRING-16OZ",
+      "display_name": "Spring Water 16oz",
+      "unit_cost": 0.46,
+      "case_size": 24,
+      "lead_time_days": 2
+    }
+  ],
+  "notes": "Public-safe example vendor catalog slice for simulator documentation only."
+}

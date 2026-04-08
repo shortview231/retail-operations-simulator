@@ -4,6 +4,13 @@ Public-facing baseline for a real retail operations simulation system with a doc
 
 This repository is intentionally honest about scope. It does not pretend to be the entire internal simulator build. It exists to show the current architecture, operating model, and proof artifacts in a public-safe form that hiring managers, collaborators, and clients can evaluate quickly.
 
+## Quick Read / Recruiter Snapshot
+
+- This is a vending-first retail operations simulator, not a generic dashboard mockup.
+- It models operational decisions across inventory, vendor ordering, machine loadout, and reporting.
+- It is technically credible because the simulator is framed around persisted SQLite-backed state, workflow stages, and multi-surface operations views.
+- The repo includes proof in the form of eight simulator screenshots, architecture and verification docs, and public-safe example artifacts.
+
 ## Why This Matters
 
 Retail simulation is only useful if it can represent actual operational decisions, not just static dashboards or toy screens. This repo is meant to show a system-builder approach to that problem:
@@ -73,6 +80,7 @@ The reporting layer summarizes the operational state of the simulation across bu
 - `screenshots/07-machine-loadout-demo.svg` shows machine slot planning and depth updates
 - `screenshots/08-reports-summary-demo.svg` shows operations, personnel, and business reporting surfaces
 - `docs/verification.md` maps each artifact to the simulator behavior it validates
+- `examples/` contains public-safe sample state and reporting artifacts
 
 ## Public Positioning
 
@@ -94,8 +102,17 @@ This repo is strongest when read as a credible engineering baseline:
 
 The current working materials live inside `~/Desktop/Projects/Lucid_Vision`.
 
-## Recommended GitHub Metadata
+## Manual Completion Checklist
 
 - Description: `Public baseline for a retail operations simulator with vending-first workflow docs, proof artifacts, and architecture notes.`
 - Website: `https://shortview231.github.io/`
 - Topics: `retail-simulator`, `operations`, `sqlite`, `simulation`, `inventory`, `vending`, `workflow`, `proof-pack`
+- Align the GitHub About box with the README description and website
+- Choose a repo social preview image based on one of the proof screenshots or a composed proof-pack cover
+
+## Current Public Boundary
+
+- No internal save files are published
+- No private operator identifiers are published
+- No internal local machine paths are published
+- This repo documents a real system direction, but it is not presented as the full private simulator codebase

@@ -1,0 +1,31 @@
+{
+  "snapshot_date": "2026-04-07",
+  "storeroom": "North Route Hub",
+  "products": [
+    {
+      "sku": "CHIPS-SEA-SALT",
+      "display_name": "Sea Salt Chips",
+      "on_hand_units": 84,
+      "case_size": 24,
+      "reorder_flag": false,
+      "target_min_units": 48
+    },
+    {
+      "sku": "SODA-COLA-12OZ",
+      "display_name": "Cola 12oz",
+      "on_hand_units": 22,
+      "case_size": 24,
+      "reorder_flag": true,
+      "target_min_units": 60
+    },
+    {
+      "sku": "CANDY-FRUIT-CHEWS",
+      "display_name": "Fruit Chews",
+      "on_hand_units": 130,
+      "case_size": 36,
+      "reorder_flag": false,
+      "target_min_units": 72
+    }
+  ],
+  "notes": "Public-safe example inventory state for simulator documentation only."
+}

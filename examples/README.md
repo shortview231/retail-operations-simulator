@@ -1,5 +1,12 @@
 # Examples
 
-This folder is reserved for future public-safe examples derived from schema excerpts, generated fixtures, or demo-safe report outputs.
+This folder contains public-safe sample artifacts that make the simulator more tangible without exposing internal save files or operator data.
 
-The current public baseline focuses on documentation and proof artifacts first. No example data is published here yet because the repo is avoiding internal save files or operational snapshots until they are explicitly prepared for public release.
+Included examples:
+
+- `sample_inventory_state.json`
+- `sample_vendor_catalog_slice.json`
+- `sample_current_order_snapshot.json`
+- `sample_reporting_summary.json`
+
+All values are demonstration-only and are included to show structure, workflow shape, and reporting intent.

@@ -1,0 +1,17 @@
+{
+  "report_date": "2026-04-07",
+  "run_name": "north_route_demo",
+  "summary": {
+    "machines_serviced": 12,
+    "fill_rate_percent": 93.4,
+    "out_of_stock_slots": 4,
+    "orders_in_transit": 2,
+    "labor_hours_scheduled": 18
+  },
+  "business_view": {
+    "gross_sales": 842.55,
+    "restock_cost_estimate": 301.2,
+    "margin_estimate": 541.35
+  },
+  "notes": "Public-safe example report summary for simulator documentation only."
+}
