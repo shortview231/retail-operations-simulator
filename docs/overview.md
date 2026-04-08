@@ -1,12 +1,40 @@
 # Overview
 
-`retail-operations-simulator` is the outward-facing baseline for Lucid Vision's retail simulation work.
+`retail-operations-simulator` is the public baseline for Lucid Vision's retail simulation work.
 
-## Current evidence
+## What is credible today
 
-- POS portfolio project summary: # SQL + Python POS Simulator (Portfolio) A fictional retail company simulator using SQLite + Python with a basic POS GUI. ## Features - SQLite schema and seed data for products, customers, orders, and order_items - Python data layer for sales operations and...
-- Vending simulator schema summary: # Phase 1 Schema Registry This registry defines the SQLite schema for the first runnable vending simulator slice. ## Database Location - SQLite DB: `sim/data/phase1_vending.sqlite` - Schema file: `sim/schema/phase1_vending.sql` - Setup script: `scripts/setup_phase1_db.py` - Registry exports: `data/csv/phase1_table_r...
+- There is an earlier SQL + Python POS simulator foundation
+- There is a more ambitious vending-first simulator with documented schema and workflow structure
+- The current public repo includes a proof pack that demonstrates launch flow, inventory depth, vendor planning, order state, loadout, and reporting
+- The architecture is operational, not just visual: inventory, vendors, machines, and reporting are connected parts of one system story
 
-## Truthful public framing
+## What this public repo is showing
 
-The repo should be presented as a retail-simulation foundation with a strong vending-first internal slice already documented. The initial public baseline stays docs-first so the public repo matches what is actually stable and reviewable today.
+The goal of this repository is to make the simulator legible in public without dumping internal project state. It is showing:
+
+- the current simulator direction
+- the vending-first workflow shape
+- the architectural boundary of the public baseline
+- the proof artifacts that demonstrate real operational surfaces
+
+## Why the baseline matters
+
+For a public repo, the value here is not fake completeness. The value is that the simulator already reads like a real operations system: it has multiple workflow surfaces, documented structure, and a visible proof layer that connects inventory, vendor ordering, machine planning, and reporting.
+
+## Current public boundary
+
+- no internal save files
+- no private local machine paths
+- no operator-identifying setup data
+- no claim that this repo contains the full internal simulator implementation
+
+## Demonstration pack
+
+The public proof pack includes:
+
+- architecture and workflow notes under `docs/`
+- eight sanitized simulator screenshots under `screenshots/`
+- verification notes explaining what each public artifact proves
+
+This keeps the public repo concrete, reviewable, and honest about current maturity.

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <style>.bg{fill:#0b1526}.panel{fill:#11233d;stroke:#2f4462;stroke-width:1}.h{fill:#e0eafb;font:34px 'DejaVu Sans',sans-serif}.r{fill:#d6e4f8;font:14px 'DejaVu Sans',sans-serif}.m{fill:#a2b6d2;font:13px 'DejaVu Sans',sans-serif}</style>
+  <rect class="bg" width="1440" height="900"/><rect class="panel" x="16" y="16" width="1408" height="868" rx="14"/>
+  <text class="h" x="36" y="64">Machine Loadout Editor (Proxy Demo)</text>
+  <rect class="panel" x="36" y="92" width="920" height="752" rx="12"/>
+  <text class="r" x="56" y="128">Bus Depot Drinks machine slot grid with depth controls and keypad entry.</text>
+  <text class="r" x="56" y="162">Sample rows: Cola Can, Lemon Lime Can, Spring Water Bottle, Sweet Tea Bottle, Energy Drink Tall.</text>
+  <rect class="panel" x="974" y="92" width="430" height="752" rx="12"/>
+  <text class="r" x="994" y="128">Slot Planner + Selected Slot + Product depth status panels.</text>
+  <text class="m" x="994" y="810">Operational proof only; no personal or environment-specific identifiers.</text>
+</svg>

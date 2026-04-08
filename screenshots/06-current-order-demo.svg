@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <style>.bg{fill:#0b1526}.panel{fill:#11233d;stroke:#2f4462;stroke-width:1}.h{fill:#e0eafb;font:34px 'DejaVu Sans',sans-serif}.r{fill:#d6e4f8;font:14px 'DejaVu Sans',sans-serif}.m{fill:#a2b6d2;font:13px 'DejaVu Sans',sans-serif}</style>
+  <rect class="bg" width="1440" height="900"/><rect class="panel" x="16" y="16" width="1408" height="868" rx="14"/>
+  <text class="h" x="36" y="64">Current Order Draft + In-Transit Orders (Proxy Demo)</text>
+  <rect class="panel" x="36" y="92" width="1368" height="130" rx="12"/>
+  <text class="m" x="56" y="128">Draft Bill Total</text><text class="h" x="56" y="174">$336.00</text>
+  <text class="r" x="480" y="154">Lines: 4 | Cases: 8 | Units: 192</text>
+  <rect class="panel" x="36" y="238" width="1368" height="606" rx="12"/>
+  <text class="r" x="56" y="274">Draft rows: Citrus Energy Tall (4), Cold Brew Can (1), Mocha Cold Brew (1), Vanilla Cold Brew (2)</text>
+  <text class="r" x="56" y="310">In-transit orders section tracks committed order IDs, units, unit cost, totals, arrival day, and status.</text>
+</svg>

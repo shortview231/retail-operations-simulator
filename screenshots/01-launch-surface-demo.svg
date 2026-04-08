@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="820" viewBox="0 0 1440 820">
+  <style>
+    .bg { fill: #0d1628; } .panel { fill: #12233c; stroke: #2f4565; stroke-width: 1; }
+    .t1 { fill: #e1ebfb; font: 56px 'DejaVu Sans', sans-serif; font-weight: 700; }
+    .t2 { fill: #a4b7d3; font: 20px 'DejaVu Sans', sans-serif; }
+    .btn { fill: #2f5f9f; } .btn2 { fill: #10213b; stroke: #3d5575; stroke-width: 1; }
+    .tx { fill: #e4eeff; font: 32px 'DejaVu Sans', sans-serif; }
+    .small { fill: #a4b7d3; font: 16px 'DejaVu Sans', sans-serif; }
+  </style>
+  <rect class="bg" width="1440" height="820"/>
+  <rect class="panel" x="18" y="18" width="1404" height="784" rx="28"/>
+  <text class="small" x="34" y="54">LV PROJECT WORKSPACE</text>
+  <text class="t1" x="34" y="132">Retail Simulator</text>
+  <text class="t2" x="34" y="188">Run the vending route from one control surface. Start a manager, continue the latest run, and operate against the SQLite engine.</text>
+  <rect class="btn" x="34" y="222" width="180" height="64" rx="20"/><text class="tx" x="62" y="264">New Game</text>
+  <rect class="btn2" x="232" y="222" width="150" height="64" rx="20"/><text class="tx" x="254" y="264">Continue</text>
+  <rect class="btn2" x="400" y="222" width="138" height="64" rx="20"/><text class="tx" x="424" y="264">Settings</text>
+  <text class="small" x="34" y="336">Active run available (sanitized path)</text>
+  <text class="small" x="34" y="372">/Projects/.../sim/saves/phase1_vending_run.json</text>
+</svg>

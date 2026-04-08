@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <style>
+    .bg{fill:#0b1526}.panel{fill:#11233d;stroke:#2f4462;stroke-width:1}.h{fill:#e0eafb;font:28px 'DejaVu Sans',sans-serif}
+    .c{fill:#a2b6d2;font:13px 'DejaVu Sans',sans-serif}.r{fill:#d6e4f8;font:14px 'DejaVu Sans',sans-serif}
+  </style>
+  <rect class="bg" width="1440" height="900"/>
+  <rect class="panel" x="12" y="12" width="1416" height="876" rx="14"/>
+  <text class="h" x="32" y="58">Gateway Snacks Inventory (Proxy Demo)</text>
+  <text class="c" x="32" y="84">Showing only selected vendor products for the selected day.</text>
+  <text class="c" x="32" y="124">Product</text><text class="c" x="350" y="124">Vendor</text><text class="c" x="540" y="124">On Hand</text><text class="c" x="680" y="124">On Order</text><text class="c" x="820" y="124">Received Today</text><text class="c" x="1000" y="124">In Machines</text><text class="c" x="1180" y="124">Fill Gap</text>
+  <text class="r" x="32" y="160">BBQ Chips</text><text class="r" x="350" y="160">Gateway Snacks</text><text class="r" x="540" y="160">30</text><text class="r" x="680" y="160">0</text><text class="r" x="820" y="160">0</text><text class="r" x="1000" y="160">0</text><text class="r" x="1180" y="160">80</text>
+  <text class="r" x="32" y="192">Candy Bar</text><text class="r" x="350" y="192">Gateway Snacks</text><text class="r" x="540" y="192">30</text><text class="r" x="680" y="192">0</text><text class="r" x="820" y="192">0</text><text class="r" x="1000" y="192">0</text><text class="r" x="1180" y="192">975</text>
+  <text class="r" x="32" y="224">Chocolate Cookie Bag</text><text class="r" x="350" y="224">Gateway Snacks</text><text class="r" x="540" y="224">30</text><text class="r" x="680" y="224">0</text><text class="r" x="820" y="224">0</text><text class="r" x="1000" y="224">0</text><text class="r" x="1180" y="224">100</text>
+  <text class="c" x="32" y="280">Additional rows omitted in this public-safe proof artifact.</text>
+</svg>

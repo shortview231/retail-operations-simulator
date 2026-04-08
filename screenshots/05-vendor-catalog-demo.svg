@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <style>.bg{fill:#0b1526}.panel{fill:#11233d;stroke:#2f4462;stroke-width:1}.h{fill:#e0eafb;font:34px 'DejaVu Sans',sans-serif}.r{fill:#d6e4f8;font:14px 'DejaVu Sans',sans-serif}.m{fill:#a2b6d2;font:13px 'DejaVu Sans',sans-serif}</style>
+  <rect class="bg" width="1440" height="900"/><rect class="panel" x="16" y="16" width="1408" height="868" rx="14"/>
+  <text class="h" x="36" y="64">Vendor Catalog + Order Planning (Proxy Demo)</text>
+  <text class="m" x="36" y="98">Heartland Drinks | Contract terms, delivery cadence, and reorder guidance.</text>
+  <rect class="panel" x="36" y="124" width="1368" height="720" rx="12"/>
+  <text class="r" x="56" y="160">Columns: Product, Planning, On Hand, On Order, Case Cost, Sell Price, Order To Fill, Order Cases, Action, Status.</text>
+  <text class="r" x="56" y="194">Sample items: Cold Brew Can, Mocha Cold Brew, Vanilla Cold Brew, Citrus Energy Tall, Energy Drink Tall.</text>
+  <text class="r" x="56" y="228">Action model: Add to Draft with full-case constraints and vendor cadence hints.</text>
+</svg>

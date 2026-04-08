@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <style>
+    .bg{fill:#0b1526}.panel{fill:#11233d;stroke:#2f4462;stroke-width:1}.h{fill:#e0eafb;font:30px 'DejaVu Sans',sans-serif}
+    .m{fill:#9eb2cf;font:14px 'DejaVu Sans',sans-serif}.v{fill:#eaf2ff;font:34px 'DejaVu Sans',sans-serif;font-weight:700}
+    .r{fill:#d6e4f8;font:15px 'DejaVu Sans',sans-serif}
+  </style>
+  <rect class="bg" width="1440" height="900"/>
+  <rect class="panel" x="10" y="12" width="1420" height="876" rx="16"/>
+  <text class="h" x="32" y="58">Storeroom Operations Dashboard (Proxy Demo)</text>
+  <rect class="panel" x="32" y="80" width="170" height="86" rx="10"/><text class="m" x="46" y="108">Cash On Hand</text><text class="v" x="46" y="148">$100,000</text>
+  <rect class="panel" x="216" y="80" width="170" height="86" rx="10"/><text class="m" x="230" y="108">Route Health</text><text class="v" x="230" y="148">100</text>
+  <rect class="panel" x="400" y="80" width="170" height="86" rx="10"/><text class="m" x="414" y="108">Total Machines</text><text class="v" x="414" y="148">10</text>
+  <rect class="panel" x="584" y="80" width="170" height="86" rx="10"/><text class="m" x="598" y="108">Stock Mix</text><text class="v" x="598" y="148">98 / 55</text>
+  <rect class="panel" x="32" y="188" width="1040" height="330" rx="12"/>
+  <text class="r" x="52" y="226">Vendor Storage Bays: contracted vendors, stock levels, fill-gap status, and workspace launch controls.</text>
+  <rect class="panel" x="1088" y="188" width="320" height="330" rx="12"/>
+  <text class="r" x="1106" y="226">Service Watchlist, Pending Deliveries, Recent Ledger, Transfer Status.</text>
+  <rect class="panel" x="32" y="536" width="1376" height="320" rx="12"/>
+  <text class="r" x="52" y="574">Quick Actions: Restock Machine, Advance Day, Reorder Stock, Receive Deliveries, Repair Machine.</text>
+</svg>

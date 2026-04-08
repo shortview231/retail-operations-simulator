@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <style>.bg{fill:#0b1526}.panel{fill:#11233d;stroke:#2f4462;stroke-width:1}.h{fill:#e0eafb;font:34px 'DejaVu Sans',sans-serif}.r{fill:#d6e4f8;font:14px 'DejaVu Sans',sans-serif}.m{fill:#a2b6d2;font:13px 'DejaVu Sans',sans-serif}</style>
+  <rect class="bg" width="1440" height="900"/><rect class="panel" x="16" y="16" width="1408" height="868" rx="14"/>
+  <text class="h" x="36" y="64">Reports Summary Views (Proxy Demo)</text>
+  <rect class="panel" x="36" y="92" width="1368" height="232" rx="12"/>
+  <text class="r" x="56" y="130">Operations tab: daily gross/net, units, stockouts, pending orders, incoming deliveries, top sellers.</text>
+  <rect class="panel" x="36" y="344" width="1368" height="232" rx="12"/>
+  <text class="r" x="56" y="382">Personnel tab: active staff, open candidates, payroll due/latest payroll, schedule snapshot.</text>
+  <rect class="panel" x="36" y="596" width="1368" height="248" rx="12"/>
+  <text class="r" x="56" y="634">Business tab: vendor cash, projected spend, open commitments, net-after-expense view.</text>
+  <text class="m" x="56" y="810">Metrics shown are proxy-safe and illustrate report structures, not live business values.</text>
+</svg>
