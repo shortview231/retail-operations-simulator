@@ -1,44 +1,47 @@
 # Architecture
 
-## Current system shape
+## System shape
 
-The internal retail simulator evidence supports a layered story:
+The simulator is organized around persistent operating state and connected workflow stages rather than disconnected screens.
 
-1. a lightweight SQL + Python POS simulator used as a portfolio-friendly proof of process design
-2. a more ambitious vending-first retail simulator with a documented SQLite schema registry and supporting scripts
+Core areas include:
 
-## Existing implementation truths
+1. scenario and run state
+2. inventory and replenishment
+3. vendor and catalog planning
+4. order tracking
+5. machine slot and depth planning
+6. reporting and decision review
 
-- The vending-first project tracks simulator runs, days, inventory, vendors, assortments, sales, money ledger entries, events, and staffing foundations
-- The current schema registry explicitly treats the simulator as Phase 1 of a broader operations model
-- The next internal steps documented in the schema registry focus on stronger staffing effects, scheduling policy, and UI workflow support
+## Simulation state
 
-## Engine components
+Scenario state is persisted so an operating run can be initialized, continued, and advanced over time. This supports repeatable scenarios and makes state changes inspectable.
 
-### Simulation engine
+## Inventory model
 
-The simulator is organized around persisted run state and day progression. That matters because it lets the system behave like an ongoing operation instead of a one-off dashboard or static mock flow.
+Inventory is represented with product-level availability and depth so it can support fill-gap analysis, replenishment decisions, and downstream machine planning.
 
-### Inventory model
+## Vendor model
 
-Inventory is represented as an operating layer with on-hand depth, fill-gap visibility, and downstream loadout consequences. It is not just a list of products; it is part of the decision surface.
+Vendor and catalog structures represent sourcing as an explicit part of the workflow rather than an assumed background step.
 
-### Vendor model
+## Order pipeline
 
-The vendor layer captures supplier-facing planning, catalog views, and ordering workflows. This gives the simulator a stronger procurement dimension than a simple POS-style demo.
+Purchasing moves from planning through order creation and current-order tracking. This provides a reviewable path between sourcing decisions and downstream inventory effects.
 
-### Order pipeline
+## Machine loadout
 
-Catalog planning, draft order construction, and current-order tracking form a connected order pipeline. This makes purchasing behavior visible and reviewable as part of the simulator design.
+Machine state is represented at the slot and depth level, supporting product-placement and replenishment decisions.
 
-### Machine loadout engine
+## Reporting
 
-Machine state is modeled at the slot/depth level, which supports realistic replenishment and product placement thinking. That level of detail is a core part of what makes the simulator vending-first.
+Reporting surfaces summarize current scenario state across operational, personnel, and business views. The reporting layer is intended for decision review, not only presentation.
 
-### Reporting engine
+## Design principles
 
-Reporting surfaces summarize operational, personnel, and business state from the current simulation context. This helps the simulator read as a workflow and decision system, not just an interface study.
-
-## Public baseline boundary
-
-The first export should describe the simulator architecture and current maturity rather than claim a polished public product. Any future public examples should be derived from safe schema or fixture-level material.
+- persist meaningful state
+- make workflow stages explicit
+- keep example data inspectable
+- separate operational logic from presentation
+- document assumptions and boundaries
+- use sanitized examples for public demonstration
