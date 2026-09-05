@@ -1,118 +1,93 @@
 # Retail Operations Simulator
 
-Public-facing baseline for a real retail operations simulation system with a documented vending-first engine and a public-safe proof pack.
+A public portfolio project demonstrating how retail and vending operations can be modeled as connected workflows rather than isolated dashboards.
 
-This repository is intentionally honest about scope. It does not pretend to be the entire internal simulator build. It exists to show the current architecture, operating model, and proof artifacts in a public-safe form that hiring managers, collaborators, and clients can evaluate quickly.
+## What the project demonstrates
 
-## Quick Read / Recruiter Snapshot
+The simulator focuses on operational decisions across:
 
-- This is a vending-first retail operations simulator, not a generic dashboard mockup.
-- It models operational decisions across inventory, vendor ordering, machine loadout, and reporting.
-- It is technically credible because the simulator is framed around persisted SQLite-backed state, workflow stages, and multi-surface operations views.
-- The repo includes proof in the form of eight simulator screenshots, architecture and verification docs, and public-safe example artifacts.
+- storeroom inventory
+- vendor planning
+- purchasing and current orders
+- machine slot and loadout planning
+- persistent scenario state
+- operational reporting
 
-## Why This Matters
+The project is intentionally scoped as a portfolio case study. It presents the architecture, example data, and proof artifacts needed to evaluate the design without publishing private operating data or unrelated internal systems.
 
-Retail simulation is only useful if it can represent actual operational decisions, not just static dashboards or toy screens. This repo is meant to show a system-builder approach to that problem:
+## System flow
 
-- inventory, ordering, and machine loadout treated as connected workflows
-- simulation state modeled through SQLite-backed operational structures
-- a proof layer that demonstrates launch flow, storeroom ops, vendor planning, and reporting
-- a public boundary that keeps private operator details and internal save data out of the repo
+```text
+scenario setup
+  -> storeroom inventory
+  -> vendor planning
+  -> order tracking
+  -> machine loadout
+  -> operational reports
+```
 
-## What Exists Today
+## Engineering approach
 
-- A vending-first simulation engine modeled around manager runs, days, inventory, vendors, orders, machine state, and reporting surfaces
-- SQLite-backed operational state used to hold the simulation timeline rather than static mock views
-- Inventory depth, fill-gap visibility, and machine slot/loadout mechanics represented as first-class operating concerns
-- Vendor workspaces, catalog-driven ordering, and current-order tracking that connect purchasing decisions to downstream machine state
-- Reporting surfaces that summarize operational, personnel, and business views from the current simulation state
-- Existing setup and run scripts that support the simulator database and active run-loop workflow
-- A public-safe 8-shot proof pack covering launch flow, storeroom operations, ordering, loadout, and reports
+### Persistent state
 
-## Compact System Flow
-
-`manager setup -> storeroom inventory -> vendor planning -> current order -> machine loadout -> reports`
-
-The current public baseline shows how the simulator moves from bootstrap and inventory state through vendor ordering and machine planning into operational reporting surfaces.
-
-## Architecture Depth
-
-### Simulation engine
-
-The simulator is structured around persisted run state rather than disconnected screens. It tracks current run context, simulation day progression, and the operational state needed to continue a scenario over time.
+The simulator models an ongoing operating scenario rather than a collection of static screens. SQLite-backed state supports repeatable scenario progression and makes operational changes inspectable over time.
 
 ### Inventory model
 
-The inventory layer treats storeroom state as more than a static count. It supports product-level depth, on-hand visibility, and the gap analysis needed to decide what should be reordered or loaded into route machines.
+Inventory is represented at the product and on-hand level so the system can support fill-gap analysis, replenishment decisions, and downstream machine loadout planning.
 
-### Vendor model
+### Vendor and ordering workflow
 
-Vendor workspaces and catalog views make suppliers part of the operational loop. The simulator treats vendor relationships, order drafting, and inbound inventory flow as explicit business mechanics rather than background assumptions.
+Vendor catalogs and ordering steps connect purchasing decisions with expected inbound inventory. Drafting and current-order views make the purchasing workflow reviewable instead of treating procurement as an invisible background process.
 
-### Order pipeline
+### Machine loadout planning
 
-The system supports a progression from catalog planning to draft order to current order tracking. That makes purchasing logic inspectable and ties order decisions directly to downstream inventory and machine outcomes.
+Machine state is represented with slot-level product and depth information, supporting more realistic placement and replenishment decisions.
 
-### Machine loadout engine
+### Reporting
 
-Machine state is represented at the slot and depth level. The simulator uses that detail to support product-specific placement decisions, route loadout planning, and more realistic replenishment behavior.
+Reporting surfaces summarize the current scenario across operational, personnel, and business-facing views. The emphasis is on decision support and workflow visibility rather than decorative dashboarding.
 
-### Reporting engine
+## Proof artifacts
 
-The reporting layer summarizes the operational state of the simulation across business, personnel, and machine-facing views. This gives the project a stronger decision-support character than a simple POS or toy inventory demo.
+The repository includes a curated demonstration set:
 
-## Why This Simulator Is Unique
+- launch and scenario-flow examples
+- storeroom operations
+- inventory depth and fill-gap examples
+- vendor workspace and catalog examples
+- current-order tracking
+- machine loadout planning
+- reporting summaries
+- public-safe sample JSON state
+- verification documentation linking examples to modeled behavior
 
-- It is vending-first rather than a generic retail mockup, which gives the workflow a specific operational identity
-- It models the day-to-day mechanics of ordering, storeroom management, and machine replenishment instead of only end results
-- It behaves like a business decision engine, where inventory, vendors, orders, and reporting affect one another
-- It uses SQLite-backed state architecture so the simulation reads like a persistent system, not a one-screen prototype
+## Repository structure
 
-## Proof Layer
+```text
+retail-operations-simulator/
+├── docs/          # Architecture, flow, schema, and verification notes
+├── examples/      # Public-safe sample state and reporting data
+├── screenshots/   # Demonstration surfaces
+└── README.md
+```
 
-- `screenshots/01-launch-surface-demo.svg` shows run bootstrap and continue flow
-- `screenshots/02-storeroom-ops-demo.svg` shows the central operations surface
-- `screenshots/03-inventory-depth-demo.svg` shows product-level inventory depth and fill-gap logic
-- `screenshots/04-vendor-workspace-overview-demo.svg` shows vendor workspace state
-- `screenshots/05-vendor-catalog-demo.svg` shows catalog planning and draft-order actions
-- `screenshots/06-current-order-demo.svg` shows current order totals and in-transit tracking
-- `screenshots/07-machine-loadout-demo.svg` shows machine slot planning and depth updates
-- `screenshots/08-reports-summary-demo.svg` shows operations, personnel, and business reporting surfaces
-- `docs/verification.md` maps each artifact to the simulator behavior it validates
-- `examples/` contains public-safe sample state and reporting artifacts
+## Skills demonstrated
 
-## Public Positioning
+- Python and SQL-oriented system design
+- relational and state modeling
+- SQLite-backed persistence
+- operations workflow analysis
+- inventory and procurement modeling
+- business reporting
+- schema documentation
+- testable sample-state design
+- technical communication
 
-This repo is strongest when read as a credible engineering baseline:
+## Public-data boundary
 
-- it documents a real simulator direction without overstating polish
-- it shows operational depth across multiple surfaces instead of a single mock screen
-- it keeps the scope honest: proof, architecture, and public-safe documentation rather than an internal code dump
-- it preserves the connection between simulation design and business workflow
+This repository contains only portfolio-safe examples and documentation. It does not contain real customer records, private operator data, credentials, personal financial data, or private production system configuration.
 
-## What This Repo Does Not Claim
+## Portfolio positioning
 
-- It is not the full internal Lucid Vision simulator codebase
-- It does not publish internal save files or operational data
-- It does not expose private local paths or operator-identifying setup details
-- It does not claim the public repo is the complete finished simulator product
-
-## Source of Truth
-
-The current working materials live inside `~/Desktop/Projects/Lucid_Vision`.
-
-## Manual Completion Checklist
-
-- Description: `Public baseline for a retail operations simulator with vending-first workflow docs, proof artifacts, and architecture notes.`
-- Website: `https://shortview231.github.io/`
-- Topics: `retail-simulator`, `operations`, `sqlite`, `simulation`, `inventory`, `vending`, `workflow`, `proof-pack`
-- Align the GitHub About box with the README description and website
-- Choose a repo social preview image based on one of the proof screenshots or a composed proof-pack cover
-
-## Current Public Boundary
-
-- No internal save files are published
-- No private operator identifiers are published
-- No internal local machine paths are published
-- This repo documents a real system direction, but it is not presented as the full private simulator codebase
+This project is best read as evidence of business-systems thinking: translating a real operating process into state, workflow stages, data structures, and decision-support surfaces while keeping the design understandable and testable.
