@@ -1,23 +1,23 @@
-# Roadmap
+# Public Portfolio Maintenance
 
-## Baseline
+This repository is maintained as a stable portfolio case study rather than a public product roadmap.
 
-- Publish the simulator direction and current architecture
-- Document the vending-first phase and schema foundation
-- Publish a curated public-safe proof pack that demonstrates active core systems
+## Appropriate public updates
 
-## Current documented direction
+- improve documentation clarity
+- add sanitized example data
+- add verification notes for demonstrated behavior
+- improve screenshots or walkthroughs when they strengthen technical evidence
+- correct implementation or methodology documentation
 
-- Retail simulator journal-driven publishing pipeline
+## Keep out of the public repository
 
-## Next credible layer
+- private product plans
+- company strategy
+- internal development priorities
+- private filesystem paths
+- real operator or customer data
+- credentials or production configuration
+- unpublished commercial plans
 
-- Add safe schema excerpts or generated examples
-- Publish a public-facing run-loop walkthrough
-- Add deeper report examples and scenario explainers while maintaining public-safe boundaries
-
-## Deferred
-
-- Full internal simulator code dump
-- Internal save files or operational data
-- Any UI materials that still depend on internal paths or unfinished systems
+Public changes should strengthen the technical case study without revealing unrelated private work.
