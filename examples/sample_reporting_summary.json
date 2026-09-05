@@ -1,6 +1,6 @@
 {
   "report_date": "2026-04-07",
-  "run_name": "north_route_demo",
+  "run_name": "demo_route_run",
   "summary": {
     "machines_serviced": 12,
     "fill_rate_percent": 93.4,
@@ -13,5 +13,5 @@
     "restock_cost_estimate": 301.2,
     "margin_estimate": 541.35
   },
-  "notes": "Public-safe example report summary for simulator documentation only."
+  "notes": "Synthetic reporting summary for portfolio demonstration only."
 }
