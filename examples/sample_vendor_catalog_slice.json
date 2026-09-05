@@ -1,6 +1,6 @@
 {
-  "vendor": "Metro Snack Supply",
-  "catalog_region": "St. Louis Route Group",
+  "vendor": "Example Snack Supply",
+  "catalog_region": "Demo Route Group",
   "products": [
     {
       "sku": "CHIPS-SEA-SALT",
@@ -24,5 +24,5 @@
       "lead_time_days": 2
     }
   ],
-  "notes": "Public-safe example vendor catalog slice for simulator documentation only."
+  "notes": "Synthetic vendor catalog for portfolio demonstration only."
 }
