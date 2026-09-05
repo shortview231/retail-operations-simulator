@@ -1,6 +1,6 @@
 {
   "snapshot_date": "2026-04-07",
-  "storeroom": "North Route Hub",
+  "storeroom": "Demo Route Hub",
   "products": [
     {
       "sku": "CHIPS-SEA-SALT",
@@ -27,5 +27,5 @@
       "target_min_units": 72
     }
   ],
-  "notes": "Public-safe example inventory state for simulator documentation only."
+  "notes": "Synthetic inventory state for portfolio demonstration only."
 }
