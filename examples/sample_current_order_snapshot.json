@@ -1,6 +1,6 @@
 {
   "order_id": "demo-order-2026-04-07-01",
-  "vendor": "Metro Snack Supply",
+  "vendor": "Example Snack Supply",
   "status": "draft",
   "line_items": [
     {
@@ -23,5 +23,5 @@
     "units_total": 120,
     "estimated_cost_total": 80.4
   },
-  "notes": "Public-safe example current-order snapshot for simulator documentation only."
+  "notes": "Synthetic order snapshot for portfolio demonstration only."
 }
