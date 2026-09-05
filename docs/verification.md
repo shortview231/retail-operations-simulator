@@ -1,16 +1,16 @@
 # Verification
 
-## Curated proof pack coverage
+## Demonstration coverage
 
-1. `01-launch-surface-demo.svg` validates run bootstrap/continue flow.
-2. `02-storeroom-ops-demo.svg` validates central operations dashboard and quick actions.
-3. `03-inventory-depth-demo.svg` validates product-level inventory/fill-gap table depth.
-4. `04-vendor-workspace-overview-demo.svg` validates vendor workspace state model.
-5. `05-vendor-catalog-demo.svg` validates catalog planning and draft-order actions.
-6. `06-current-order-demo.svg` validates draft totals and in-transit order tracking.
-7. `07-machine-loadout-demo.svg` validates slot planning and depth updates.
-8. `08-reports-summary-demo.svg` validates operations/personnel/business report surfaces.
+1. `01-launch-surface-demo.svg` illustrates scenario bootstrap and continue flow.
+2. `02-storeroom-ops-demo.svg` illustrates the central operations view and actions.
+3. `03-inventory-depth-demo.svg` illustrates product-level inventory and fill-gap depth.
+4. `04-vendor-workspace-overview-demo.svg` illustrates vendor workspace state.
+5. `05-vendor-catalog-demo.svg` illustrates catalog planning and draft-order actions.
+6. `06-current-order-demo.svg` illustrates order totals and in-transit tracking.
+7. `07-machine-loadout-demo.svg` illustrates slot planning and depth updates.
+8. `08-reports-summary-demo.svg` illustrates operations, personnel, and business reporting views.
 
-## Result
+## Portfolio value
 
-This one-time public baseline demonstrates an active, multi-surface retail simulation engine with clear operational scope and credible system depth.
+Together, these sanitized examples support the repository's role as an operations-modeling case study. They demonstrate connected workflow design, persistent-state thinking, and reporting structure without making claims about a private production system.
