@@ -1,13 +1,13 @@
-# Public Portfolio Boundary
+# Demonstration Data Policy
 
-## Rules for demonstration artifacts
+## Rules for portfolio artifacts
 
-- Use synthetic or sanitized example data.
-- Remove personal names, demographic fields, credentials, and account identifiers.
-- Remove absolute local filesystem paths and machine-specific details.
-- Avoid publishing private system relationships, company strategy, or unpublished product plans.
-- Keep only the workflow, data-modeling, and reporting details needed to evaluate the technical case study.
+- Use synthetic demonstration data.
+- Exclude names, credentials, account identifiers, and other identifying fields.
+- Use portable repository-relative paths rather than machine-specific paths.
+- Keep examples limited to the workflow, data model, and reporting behavior demonstrated by this case study.
+- Label fictional values and sample entities clearly so reviewers can distinguish examples from operational data.
 
 ## Purpose
 
-The repository should demonstrate operations modeling and technical reasoning without exposing private people, environments, systems, or future business direction.
+The repository is designed to make the operations model reproducible and reviewable using self-contained demonstration artifacts.
