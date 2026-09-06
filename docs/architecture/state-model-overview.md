@@ -1,6 +1,6 @@
 # State Model Overview
 
-This document gives a compact public-safe view of the simulator's state structure without publishing the full internal schema.
+This document gives a compact view of the simulator's state structure.
 
 ## Core state areas
 
@@ -17,4 +17,4 @@ This document gives a compact public-safe view of the simulator's state structur
 
 ## Why this artifact exists
 
-The repo already includes screenshots and architecture notes. This file gives one more concrete layer: a quick state-model summary that helps reviewers understand how the simulator is organized as a system rather than a collection of isolated screens.
+The repository includes screenshots and architecture notes. This state-model summary gives reviewers a concise view of how the simulator is organized as a connected system rather than a collection of isolated screens.

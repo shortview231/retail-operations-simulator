@@ -1,6 +1,6 @@
 # Examples
 
-This folder contains public-safe sample artifacts that make the simulator more tangible without exposing internal save files or operator data.
+This folder contains synthetic demonstration artifacts that make the simulator's data structures and workflow easier to inspect.
 
 Included examples:
 
@@ -9,4 +9,4 @@ Included examples:
 - `sample_current_order_snapshot.json`
 - `sample_reporting_summary.json`
 
-All values are demonstration-only and are included to show structure, workflow shape, and reporting intent.
+All names, values, dates, products, vendors, and operating details are fictional and exist only to demonstrate structure, workflow shape, and reporting intent.

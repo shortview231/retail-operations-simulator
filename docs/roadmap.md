@@ -1,23 +1,13 @@
-# Roadmap
+# Portfolio Maintenance
 
-## Baseline
+This repository is maintained as a stable operations-modeling case study.
 
-- Publish the simulator direction and current architecture
-- Document the vending-first phase and schema foundation
-- Publish a curated public-safe proof pack that demonstrates active core systems
+## Appropriate updates
 
-## Current documented direction
+- improve documentation clarity
+- add synthetic example data
+- add verification notes for demonstrated behavior
+- improve screenshots or walkthroughs when they strengthen technical evidence
+- correct implementation or methodology documentation
 
-- Retail simulator journal-driven publishing pipeline
-
-## Next credible layer
-
-- Add safe schema excerpts or generated examples
-- Publish a public-facing run-loop walkthrough
-- Add deeper report examples and scenario explainers while maintaining public-safe boundaries
-
-## Deferred
-
-- Full internal simulator code dump
-- Internal save files or operational data
-- Any UI materials that still depend on internal paths or unfinished systems
+Changes should keep the repository focused on the workflow, state model, and reporting behavior demonstrated by the case study.
