@@ -1,23 +1,13 @@
-# Public Portfolio Maintenance
+# Portfolio Maintenance
 
-This repository is maintained as a stable portfolio case study rather than a public product roadmap.
+This repository is maintained as a stable operations-modeling case study.
 
-## Appropriate public updates
+## Appropriate updates
 
 - improve documentation clarity
-- add sanitized example data
+- add synthetic example data
 - add verification notes for demonstrated behavior
 - improve screenshots or walkthroughs when they strengthen technical evidence
 - correct implementation or methodology documentation
 
-## Keep out of the public repository
-
-- private product plans
-- company strategy
-- internal development priorities
-- private filesystem paths
-- real operator or customer data
-- credentials or production configuration
-- unpublished commercial plans
-
-Public changes should strengthen the technical case study without revealing unrelated private work.
+Changes should keep the repository focused on the workflow, state model, and reporting behavior demonstrated by the case study.
